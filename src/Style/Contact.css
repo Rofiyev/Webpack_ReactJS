@@ -1,0 +1,85 @@
+#contact {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  padding: 3rem 5rem;
+  gap: 10px;
+}
+.image {
+  width: 50%;
+}
+.phone {
+  position: relative;
+  width: 250px;
+  height: 500px;
+  overflow: hidden;
+}
+.phone::before {
+  content: "";
+  position: absolute;
+  z-index: 22;
+  width: 100px;
+  height: 30px;
+  background-color: #121212;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  border-radius: 10px;
+}
+.phone img:first-child {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.phone img:last-child {
+  width: 93%;
+  height: 95%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 10;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  border-radius: 30px;
+}
+
+.text {
+  width: 50%;
+  display: grid;
+  place-items: center;
+}
+.text button {
+  background-color: #daf1e7;
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 0;
+}
+.text h1 {
+  font-size: 3rem;
+  margin: 15px 0;
+}
+.text .buttons {
+  display: flex;
+  gap: 20px;
+  margin: 20px 0 0 0 !important;
+}
+.text .buttons button {
+  width: 190px !important;
+  height: 50px !important;
+  background-color: #121212;
+  border-radius: 0.3rem !important;
+  color: #fff !important;
+  cursor: pointer;
+  padding: 0 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.text .buttons button .text h6 {
+  font-weight: 300 !important;
+}

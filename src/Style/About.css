@@ -1,0 +1,92 @@
+#about {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  padding: 3rem 5rem;
+  gap: 50px;
+}
+
+.stars {
+  display: flex;
+  gap: 5px;
+}
+.stars img {
+  width: 20px;
+  height: 20px;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  margin: 10px 0 0;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin-left: 5rem;
+}
+.buttons button {
+  background-color: #09a66d;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-left: 0.6rem;
+  display: grid;
+  place-items: center;
+}
+.buttons button.not {
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.buttons button .bi {
+  width: 60%;
+  height: 60%;
+  cursor: pointer;
+}
+
+#about .about-img {
+  position: relative;
+}
+#about .about-img .back {
+  width: 500px;
+  height: 500px;
+  background: #daf1e7;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+}
+#about .about-img .back img {
+  width: 90%;
+  height: 90%;
+  mix-blend-mode: darken;
+  object-fit: cover;
+}
+#about .about-img .person {
+  position: absolute;
+  left: 5%;
+  bottom: 8%;
+  background: #fff;
+  width: 165px;
+  height: 70px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 0.5rem;
+}
+#about .about-img .person .wrapper-users img {
+  margin: 0 0 0 -10px;
+  object-fit: cover;
+  cursor: pointer;
+}
+#about .about-img .person .wrapper-users {
+  margin: 5px 0 0;
+  display: flex;
+  align-items: center;
+}

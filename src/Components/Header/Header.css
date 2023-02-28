@@ -1,0 +1,47 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 5rem;
+  width: 100%;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  margin: 0 0.8rem;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+nav ul li:hover {
+  color: #09a66d;
+}
+
+.login {
+  display: flex;
+  column-gap: 20px;
+}
+
+.login button {
+  background-color: #09a66d;
+  color: #fff;
+  border: none;
+  border-radius: 0.2rem;
+  padding: 0.25rem 0.6rem;
+  cursor: pointer;
+}
+
+.login .icons {
+  display: flex;
+  column-gap: 0.7rem;
+}
+.login .icons button {
+  background-color: #f3fbf8;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.login .icons .icon {
+  width: 100%;
+  height: 100%;
+}
